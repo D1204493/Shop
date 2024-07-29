@@ -10,13 +10,13 @@
 
     <ScrollView
         android:layout_width="414dp"
-        android:layout_height="746dp"
+        android:layout_height="663dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +35,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:onClick="eatPage"
-                android:text="饗食天堂" />
+                android:text="饗食天堂"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="413dp"
@@ -134,7 +135,7 @@
             <LinearLayout
                 android:layout_width="411dp"
                 android:layout_height="87dp"
-                android:layout_marginBottom="56dp"
+                android:layout_marginBottom="0dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -194,6 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="@color/white"
                 android:onClick="GotoEAT"
@@ -201,7 +203,149 @@
                 android:textColor="@color/black"
                 app:cornerRadius="2dp" />
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="🌴 分店介紹"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="424dp"
+                android:layout_height="378dp"
+                app:srcCompat="@drawable/price" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．以上價格均另加收10%服務費" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．平日如遇政府機關公告之國定假日、彈性放假日，皆以假日價格收費" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．未滿三歲以下之幼兒免費" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．三歲(含)以上~未滿六歲之幼兒酌收200元" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．六歲(含)以上~未滿十二歲之兒童半價" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．十二歲(含)以上，以成人計費" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="．欲享有兒童收費優惠，請出示健保卡或其他有效身份證明文件" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="🌴 停車資訊"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="｜Top City台中大遠百 館內停車場｜" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="．消費滿1000元以上，即可兌換免費停車1小時；持Happy Go卡，可再加贈1小時；免費停車兌換以此類推，最高上限5小時。" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="🌴 交通資訊"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="｜公車｜" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="．站牌「新光三越站」，可搭乘5、33、、48、57、77、83、86、87、88、106、146、147、6268" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="｜高鐵｜" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="．搭乘免費快捷專車到朝馬站，步行約五分鐘" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="｜開車資訊｜" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="．中山高速公路台中交流道下往台中方向，接台灣大道；中彰快速公路由市政府出口下交流道往文心路方向，轉惠中路；中投公路，文心路往北屯路方向，左轉台中港路" />
+
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/orderOnline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="線 上 訂 位"
+        android:textSize="16sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void GotoEAT(View view) {
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("geo:24.167459032893436, 120.64461669618176"));
+        i.setData(Uri.parse("geo:24.163905742424483, 120.64456305168923"));
         startActivity(i);
     }
 
