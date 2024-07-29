@@ -1,6 +1,9 @@
 package com.example.shop;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +24,25 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void eatPage(View view) {
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.eatogether.com.tw/zh-TW/store/EAT008"));
+        startActivity(i);
+    }
+
+    public void callPhone(View view) {
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_DIAL);
+        i.setData(Uri.parse("tel: +12345"));
+        startActivity(i);
+    }
+
+    public void GotoEAT(View view) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("geo:24.167459032893436, 120.64461669618176"));
+        startActivity(i);
+    }
+
 }
