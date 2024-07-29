@@ -45,4 +45,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void orderOnline(View view) {
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.feastogether.com.tw/booking/Eatogether"));
+        startActivity(i);
+    }
+
+
 }
